@@ -1,10 +1,22 @@
-function Vid() {
-  return(
-    <div>
-        <img src="https://picsum.photos/id/1/200/300" alt="Katherine Johnson" />;
-        <div><h2>React components</h2></div>
-    </div>
-  )
+import './Vid.css'
+export default function Vid({title,channel,views,time}) {
+    let bg = "dark";
+    return(
+        <>
+            <div className='container'>
+            <div className='pic'>
+            </div>
+            <img
+                src="https://placeimg.com/160/90/any" alt = "RandImg"
+            />
+            <div className='title'>{title}</div>
+            <div className='channel'>{channel}</div>
+            <div className='views'>
+                {views} views <span>.</span> {time}
+            </div>
+            </div>
+        </>
+    );
 }
 
-export default Vid;
+
