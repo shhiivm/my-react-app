@@ -4,6 +4,9 @@ import Vid from "./Vid";
 import "./App.css";
 import videos from "./data/data";
 
+import Assignment from "./Assignment";
+import PlayButton from "./PlayButton";
+
 export default function App() {
 
   return (
@@ -21,9 +24,14 @@ export default function App() {
         
       />)
     }
-
-      {/* <Gallery/>
-      <Avatar/> */}
+    <PlayButton
+      message = "Play msg"
+      onPress ={()=>alert('playy')}
+    >Play</PlayButton>
+    <PlayButton
+      message = "pause msg"
+      onPress = {()=>document.write('pause')}
+    >Pause</PlayButton>
     </>
   );
 }
