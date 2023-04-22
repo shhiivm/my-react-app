@@ -1,6 +1,6 @@
 .container{
-  width: 15em;
-  margin: 0 2px;
+  width: 13em;
+  margin: 50px 2px;
   float: left;
 }
 
@@ -10,15 +10,15 @@
 
 .title{
   font-weight: bold;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 .channel, .views{
   font-size: small;
-  color: #ccc;
+  color: #686666d6;
   margin-bottom: 2px;
 }
 
 .views span{
-  padding: 0 5px;
+  padding: 0 2.5px;
 }
