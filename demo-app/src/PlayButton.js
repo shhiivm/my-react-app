@@ -1,6 +1,11 @@
-export default function PlayButton({message,children,onPress}){
+import './PlayButton.css';
+export default function PlayButton({message,children,onPlay,onPause}){
+    let playing = false;
     function handleClick(){
-        onPress();
+        if(playing) onPause()
+        else onPlay();
+
+        playing =! playing;
     }
     return(
 
