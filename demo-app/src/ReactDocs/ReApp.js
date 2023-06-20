@@ -1,23 +1,22 @@
-// import ReComp from './ReComp';
-import "./ReApp.css";
-const user={
-    name : 'Hedy lamarr',
-    imageUrl:'https://i.imgur.com/yXOvdOSs.jpg',
-    imageSize: 90,
+const user1 = {
+    name:'Shivam',
+    age:'26',
+    imageUrl:"https://picsum.photos/200/300"
 }
-export default function MyApp(){
+
+export default function profile(){
     return(
         <>
-            <h1>{user.name}</h1>
+            <h1>{user1.name}</h1>
             <img
-                className = "avatar"
-                src = {user.imageUrl}
-                alt = {'Photo of '+ user.name}
-                style = {{
-                    width: user.imageSize,
-                    height:user.imageSize
+                className="images"
+                src = {user1.imageUrl}
+
+                style={{
+                    width:300,
+                    height:300
                 }}
-        
+
             />
         </>
     );
